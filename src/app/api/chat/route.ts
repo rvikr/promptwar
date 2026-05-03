@@ -59,7 +59,10 @@ export async function POST(req: Request) {
     const result = streamText({
       model: google(modelId),
       system: systemPrompt,
-      messages: await convertToModelMessages(messages),
+      messages: await convertToModelMessages(messages.map((m: any) => ({
+        ...m,
+        parts: m.parts ?? (m.content ? [{ type: 'text', text: m.content }] : [])
+      }))),
       tools: {
         showTimeline: tool({
           description: 'Show the interactive election process timeline widget to the user.',
@@ -89,6 +92,7 @@ export async function POST(req: Request) {
       },
     });
   } catch (error) {
+    console.error('Chat API Error:', error);
     resolveStreamDone!();
     return Response.json({ error: getClientErrorMessage(error) }, { status: 500 });
   }
