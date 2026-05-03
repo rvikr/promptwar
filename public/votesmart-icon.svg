@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="VoteSmart icon">
+  <rect width="512" height="512" rx="108" fill="#0b0f19"/>
+  <path d="M152 168h208c17.7 0 32 14.3 32 32v184H120V200c0-17.7 14.3-32 32-32Z" fill="#1d4ed8"/>
+  <path d="M184 128h144l40 80H144l40-80Z" fill="#60a5fa"/>
+  <path d="m214 248 30 30 60-68" fill="none" stroke="#f8fafc" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M152 336h208" stroke="#f8fafc" stroke-width="24" stroke-linecap="round"/>
+</svg>

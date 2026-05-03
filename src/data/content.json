@@ -1,0 +1,102 @@
+{
+  "en": {
+    "nav": {
+      "process": "Process",
+      "eligibility": "Eligibility",
+      "glossary": "Glossary"
+    },
+    "hero": {
+      "title": "Demystify the Election Process",
+      "subtitle": "Learn how your vote counts, step by step.",
+      "cta": "Start Walkthrough"
+    },
+    "walkthrough": [
+      {
+        "id": 1,
+        "title": "Voter Registration",
+        "description": "Before you can vote, you must register. Check if your name is on the electoral roll.",
+        "icon": "📝"
+      },
+      {
+        "id": 2,
+        "title": "Campaign Period",
+        "description": "Candidates present their agendas. This is the time to research and understand their promises.",
+        "icon": "📢"
+      },
+      {
+        "id": 3,
+        "title": "Polling Day",
+        "description": "Go to your designated polling booth. Show your Voter ID and cast your vote secretly using EVM/VVPAT.",
+        "icon": "🗳️"
+      },
+      {
+        "id": 4,
+        "title": "Counting & Results",
+        "description": "Votes are securely transported and counted. The candidate with the most votes is declared the winner.",
+        "icon": "📊"
+      }
+    ],
+    "myths": [
+      {
+        "id": 1,
+        "myth": "My single vote doesn't make a difference.",
+        "fact": "Every vote counts! Many elections are won by incredibly narrow margins."
+      },
+      {
+        "id": 2,
+        "myth": "I can vote anywhere in the country.",
+        "fact": "You can only vote at the specific polling booth assigned to your registered address."
+      }
+    ]
+  },
+  "hi": {
+    "nav": {
+      "process": "प्रक्रिया",
+      "eligibility": "पात्रता",
+      "glossary": "शब्दावली"
+    },
+    "hero": {
+      "title": "चुनाव प्रक्रिया को समझें",
+      "subtitle": "जानें कि आपका वोट कैसे गिना जाता है, चरण दर चरण।",
+      "cta": "शुरू करें"
+    },
+    "walkthrough": [
+      {
+        "id": 1,
+        "title": "मतदाता पंजीकरण",
+        "description": "वोट देने से पहले पंजीकरण अनिवार्य है। जांचें कि आपका नाम मतदाता सूची में है या नहीं।",
+        "icon": "📝"
+      },
+      {
+        "id": 2,
+        "title": "प्रचार अवधि",
+        "description": "उम्मीदवार अपना एजेंडा प्रस्तुत करते हैं। उनके वादों को समझने का यह सही समय है।",
+        "icon": "📢"
+      },
+      {
+        "id": 3,
+        "title": "मतदान का दिन",
+        "description": "अपने मतदान केंद्र पर जाएं। अपना वोटर आईडी दिखाएं और ईवीएम/वीवीपीएटी का उपयोग करके गुप्त रूप से वोट दें।",
+        "icon": "🗳️"
+      },
+      {
+        "id": 4,
+        "title": "मतगणना और परिणाम",
+        "description": "वोटों को सुरक्षित रूप से गिना जाता है। सबसे अधिक वोट पाने वाले को विजेता घोषित किया जाता है।",
+        "icon": "📊"
+      }
+    ],
+    "myths": [
+      {
+        "id": 1,
+        "myth": "मेरे एक वोट से कोई फर्क नहीं पड़ता।",
+        "fact": "हर वोट मायने रखता है! कई चुनाव बहुत कम अंतर से जीते जाते हैं।"
+      },
+      {
+        "id": 2,
+        "myth": "मैं देश में कहीं भी वोट दे सकता हूं।",
+        "fact": "आप केवल अपने पंजीकृत पते पर निर्दिष्ट मतदान केंद्र पर ही वोट दे सकते हैं।"
+      }
+    ]
+  }
+}

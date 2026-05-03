@@ -1,0 +1,17 @@
+{
+  "name": "VoteSmart",
+  "short_name": "VoteSmart",
+  "description": "A non-partisan platform to educate citizens on the election process.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0f19",
+  "theme_color": "#0b0f19",
+  "icons": [
+    {
+      "src": "/votesmart-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

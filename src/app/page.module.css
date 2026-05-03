@@ -1,0 +1,142 @@
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.messageRow {
+  display: flex;
+  width: 100%;
+}
+
+.messageRow.user {
+  justify-content: flex-end;
+}
+
+.messageRow.assistant {
+  justify-content: flex-start;
+}
+
+.bubble {
+  max-width: 80%;
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  line-height: 1.5;
+  font-size: 1rem;
+  white-space: pre-wrap;
+}
+
+.bubble.user {
+  background: var(--accent-color);
+  color: white;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.bubble.assistant {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+  border-bottom-left-radius: 0.5rem;
+}
+
+.inputForm {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 2rem;
+  margin-top: 1rem;
+  backdrop-filter: blur(12px);
+}
+
+.input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1rem;
+  outline: none;
+  padding: 0.5rem;
+}
+
+.input::placeholder {
+  color: var(--text-secondary);
+}
+
+.sendButton {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.sendButton:hover {
+  transform: scale(1.05);
+}
+
+.sendButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  gap: 2rem;
+}
+
+.emptyStateTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #60a5fa, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.starterPrompts {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.promptChip {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: var(--text-primary);
+}
+
+.promptChip:hover {
+  background: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+}
