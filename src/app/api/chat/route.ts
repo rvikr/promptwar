@@ -80,13 +80,15 @@ export async function POST(req: Request) {
       onFinish: () => {
         resolveStreamDone();
       },
-      onError: () => {
+      onError: (error) => {
+        console.error('Stream API Error:', error);
         resolveStreamDone();
       }
     });
 
     return result.toUIMessageStreamResponse({
       onError: (error) => {
+        console.error('AI provider error:', error);
         resolveStreamDone();
         return getClientErrorMessage(error);
       },
